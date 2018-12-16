@@ -1,0 +1,48 @@
+[debug] [2018-12-15T01:57:54.925Z] ----------------------------------------------------------------------
+[debug] [2018-12-15T01:57:54.929Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dhair\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2018-12-15T01:57:54.929Z] CLI Version:   6.1.1
+[debug] [2018-12-15T01:57:54.929Z] Platform:      win32
+[debug] [2018-12-15T01:57:54.929Z] Node Version:  v11.3.0
+[debug] [2018-12-15T01:57:54.930Z] Time:          Fri Dec 14 2018 19:57:54 GMT-0600 (Central Standard Time)
+[debug] [2018-12-15T01:57:54.930Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-12-15T01:57:54.945Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-12-15T01:57:54.946Z] > authorizing via signed-in user
+[debug] [2018-12-15T01:57:54.946Z] [iam] checking project amazingchatdg23 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2018-12-15T01:57:54.948Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/amazingchatdg23:testIamPermissions  
+
+[debug] [2018-12-15T01:57:55.734Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-15T01:57:55.736Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/amazingchatdg23  
+ 
+[debug] [2018-12-15T01:57:56.143Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'amazingchatdg23'...
+[info] 
+[info] i  deploying functions, hosting
+[debug] [2018-12-15T01:57:58.496Z] > [functions] package.json contents: {
+  "name": "friendlychat-codelab",
+  "description": "Firebase SDK for Cloud Functions codelab",
+  "dependencies": {
+    "firebase-admin": "~6.3.0",
+    "firebase-functions": "^2.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.0",
+    "eslint-plugin-promise": "^3.6.0"
+  },
+  "engines": {
+    "node": "8"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2018-12-15T01:57:58.498Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/amazingchatdg23?view=CONSUMER_VIEW  
+ 
+[debug] [2018-12-15T01:57:58.498Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/amazingchatdg23?view=CONSUMER_VIEW  
+ 
+[debug] [2018-12-15T01:57:59.222Z] <<< HTTP RESPONSE 200
+[warn] !  functions: missing necessary APIs. Enabling now...
+[debug] [2018-12-15T01:57:59.229Z] >>> HTTP REQUEST PATCH https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/amazingchatdg23?updateMask=usageSettings  
+
+[debug] [2018-12-15T01:57:59.347Z] <<< HTTP RESPONSE 200
+[debug] [2018-12-15T01:58:00.109Z] <<< HTTP RESPONSE 200
